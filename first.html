@@ -3,53 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Итреактивная карта</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Logo</a>
-        <div class="group">
-            <div class="dropdown">
-                <div class="select">
-                    <span class="selected">Укажите регион</span>
-                    <div class="caret"></div>
-                </div>
-                <ul class="menu">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
+        <div class="navigator">
+            <nav>
+                <ul>
+                    <li><a href="#">Выберите регион</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Гудермесский район</a></li>
+                                <li><a href="#">Грозненский район</a></li>
+                                <li><a href="#">Шалийский район</a></li>
+                                <li><a href="#">Гудермесский район</a></li>
+                                <li><a href="#">Гудермесский район</a></li>
+                                <li><a href="#">Гудермесский район</a></li>
+                                <li class="goals"><a href="">Goals</a></li>
+                            </ul>
+                        </div>
+                    </li>    
+                    <li><a href="#">Выберите сферу образования</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Университет</a></li>
+                                <li><a href="#">Школа</a></li>
+                                <li class="goals"><a href="">Коледж</a></li>
+                            </ul>
+                        </div>
+                    </li>   
+                    <li><a href="#">Socials</a></li>
                 </ul>
-                <div class="select">
-                    <span class="selected">Укажите учереждение</span>
-                    <div class="caret"></div>
-                </div>
-                <ul class="menu">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                </ul>
-                <div class="select">
-                    <span class="selected">Укажите регион</span>
-                    <div class="caret"></div>
-                </div>
-                <ul class="menu">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                </ul>
-            </div>
-    </div>
+                <button class="userlogin">Login</button>
+            </nav>
+            
+			
+        </div>
+    
     </header>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="email" required>
+                    <label>Password</label>
+                </div>
+                <div class="rememder-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
     
 </body>
 </html>
