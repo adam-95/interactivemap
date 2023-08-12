@@ -11,6 +11,7 @@ body{
     background: #dee1e2;
     min-height: 100vh;
     overflow-x: hidden;
+    
 }
 header{
     position: fixed;
@@ -21,13 +22,14 @@ header{
     background: #fff;
     padding: 20px 40px;
     display: flex;
+    gap: 2rem;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
     box-shadow: 0 15px 15px rgb(0, 0, 0,0.05);
 }
 .logo{
-    color: rgb(59, 115, 236);
+    color: #439bff;
     text-decoration: none;
     font-size: 3.5em;
     font-weight: 700;
@@ -35,13 +37,13 @@ header{
     letter-spacing: 0.90em;
 }
 .navigator nav  a{
-    position: relative;
+    position: static;
     font-size: 1.1em;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 10px;
 }
-.navigator nav .userlogin{
+.navigator nav .btnLogin-poput{
     width: 130px;
     height: 50px;
     background: transparent
@@ -55,14 +57,13 @@ header{
     font-weight: 500;
     transition: .5s;
 }
-.navigator nav .userlogin:hover{
+.navigator nav .btnLogin-poput:hover{
     background: #439bff;
     color: #ffffff;
 
 }
 nav{
     transition: 0.5s;
-    text-align:center;
     width: 100%;
     background-color: #ffffff;
     padding: 0;
@@ -71,33 +72,39 @@ nav{
     position: relative;
     border-radius: 60px;
     
+    
   }
 nav ul {
-    
+  
     background-color: #ffffff;
+    left: 300px;
     display: inline-flex;
     padding: 0;
     margin: 0;
     list-style: none;
-  }
+  } 
   
 nav ul li {
-    transition: .65s;
-    border-radius: 30px;
+    gap: 2rem;
+   transition: .65s;
+    text-align:center;
     display: inline-block;
   }
   
 nav ul li a {
+   
     border-radius: 30px;
     color:#439bff;
     padding:0px 60px;
-    text-decoration:none;
+    text-decoration:column;
     line-height: 60px;
-    font-size: 40px;
+    font-size: 0px;
   }
 .dropdown {
+  
     display: none;
     position: absolute;
+    
   }
 nav ul li:hover {
     background: #439bff;
@@ -122,14 +129,108 @@ nav ul li:hover .dropdown{
     position: relative;
     width: 400px;
     height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,5);
+    background: #fff;
+    border: 2px solid #65bcff;
     border-radius: 30px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0,0,0,5);
+    box-shadow: 0 0 10px #65bcff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
   }
 
+.wrapper.active-poput{transform: scale(1);}
 
+.wrapper .form-box{
+  width: 100%;
+  padding: 40px;
+}
+.form-box h2{
+  font-size: 2em;
+  color: #65bcff;
+  text-align: center;
+}
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+}
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 500;
+  color: #162938;
+  font-weight: 500;
+  position: none;
+  transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+  top: -5px;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #162938;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+.btn{
+  width: 100%;
+  height: 45px;
+  background: #65bcff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
 
+.rememder-forgot{
+  font-size: .9em;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.rememder-forgot{
+  accent-color: #162938;
+  margin-right: 3px;
+}
 
+.programer{
+  position: absolute;
+  width: 400px;
+  height: 440px;
+  background: #fff;
+  border: 2px solid #65bcff;
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px #65bcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: transform .5s ease, height .2s ease;
+}
 
+.programer.Contacts{transform: scale(1);}
+
+.programer h2{
+  font-size: 0.9em;
+  color: #162938;
+  text-align: center;
+}
