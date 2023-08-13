@@ -2,6 +2,8 @@ const wrapper=document.querySelector('.wrapper');
 const navigator=document.querySelector('.programer');
 const bthpoput=document.querySelector('.btnLogin-poput');
 const contacts=document.querySelector('.contacts');
+const togglebutton=document.getElementsByClassName('.toggle-button');
+const respons=document.getElementsByClassName('.respons');
 bthpoput.addEventListener('click',()=>{wrapper.classList.add('active-poput')});
 contacts.addEventListener('click',()=>{navigator.classList.add('Contacts')});
-
+togglebutton.addEventListener('click',()=>{respons.classList.toggle("active")});

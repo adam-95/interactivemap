@@ -234,3 +234,44 @@ nav ul li:hover .dropdown{
   color: #162938;
   text-align: center;
 }
+
+.toggle-button{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 23px;
+}
+ .bar{
+  height: 4px;
+  width: 100%;
+  background-color: #162938;
+  border-radius: 100px;
+}
+
+@media(max-width:1500px){
+  .respons{
+    display: none;
+    width: 100%;
+  }
+  .toggle-button{
+    display: flex;
+  }
+  .nav{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .respons ul{
+    flex-direction: column;
+  }
+  .respons li{
+    text-align: center;
+  }
+  .respons .active{
+    display: flex;
+  }
+
+}
