@@ -5,76 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Итреактивная карта</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Logo</a>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navigator">
-            <nav>
-                <div class="respons">
-                
-                    <ul>
-                        <li><a href="#">Выберите регион</a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li ><a href="#">Гудермесский район</a></li>
-                                    <li ><a href="#">Грозненский район</a></li>
-                                    <li ><a href="#">Шалийский район</a></li>
-                                    <li ><a href="#">Гудермесский район</a></li>
-                                    <li ><a href="#">Гудермесский район</a></li>
-                                    <li ><a href="#">Гудермесский район</a></li>
-                                
-                                </ul>
-                            </div>
-                        </li>    
-                        <li><a href="#">Выберите сферу образования</a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li ><a href="#">Университет</a></li>
-                                    <li ><a href="#">Школа</a></li>
-                                    <li ><a href="">Коледж</a></li>
-                                </ul>
-                            </div>
-                        </li>   
-                        <li class="contacts"><a href="#">Контакты</a></li>
-                    </ul>
-                    <button class="btnLogin-poput">Login</button>
-                </div>
-            </nav>
-            
-			
-        </div>
-    
-    </header>
-    <div class="programer">
-        <h2>Чтобы сообщенить об ощибке разработчикам напишить на почту <a href="mailto:adam_kadyrov_2001@mail.ru">adam_kadyrov_2001@mail.ru</a></h2>
-    </div>
-    <div class="wrapper">
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"></span>
-                    <input type="text" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"></span>
-                    <input type="Password" required>
-                    <label>Password</label>
-                </div>
-               
-                <button type="submit" class="btn">Login</button>
-                
+        <a href="#" class="logo"><span>Edu</span>MAP</a>
+        <div class="search-box">
+            <form action="" method="get" class="search-bar">
+                <input type="text" name="search" id="srch" placeholder="Поиск...">
+                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
             </form>
         </div>
+       
+	</header>
+    <section class="sec">
+        <div class="navigator">
+            <h3>Выбрать район</h3>
+            <div class="vertical-menu">
+                <a href="#">Итум-Калинский</a>
+                <a href="#">Ачхой-Мартановский </a>
+                <a href="#">Веденский</a>
+                <a href="#">Грозненский </a>
+                <a href="#">Гудермесский</a>
+                <a href="#">Курчалоевский</a>
+                <a href="#">Надтеречный </a>
+                <a href="#">Наурский</a>
+                <a href="#">Ножай-Юртовский </a>
+                <a href="#">Сунженский</a>
+                <a href="#">Урус-Мартановский</a>
+                <a href="#">Шалинский </a>
+                <a href="#">Шаройский</a>
+                <a href="#">Шатойский </a>
+                <a href="#">Шелковской</a>
+            </div>
+            <div class="checkbox1">
+                <h3>Тип учреждения</h3>
+                <label class="container"><h6>Дошкольный</h6>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="container"><h6>Общеобразовательные</h6>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="container"><h6>Профессиональные</h6>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+            
+            </div>
+            <div class="checkbox2">
+                <h3>Уровень образования</h3>
+                <label class="container"><h6>Дошкольный</h6>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="container"><h6>Общеобразовательные</h6>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="container"><h6>Профессиональные</h6>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+            
+            </div>
+        </div>
         
-    </div>
+        <div class="map">Map</div>
+    </section>
+    <footer class="footer">
+        <div class="bloc1">
+            <p>По вопросам сотрудничества:</p>
+            <p>moil.chr@mail.ru</p>
+            <p>+7(8712)22-27-42</p>
+        </div>
+        <div class="bloc2">
+            <p>По вопросам сотрудничества:</p>
+            <p>mail@chesu.ru</p>
+            <p>+7(8712)29-48-32</p>
+        </div>
+        <div class="bloc3">
+            <h5>Проект реалтзован Министерством образования и науки Чеченской Республики при поддержке ФГБОУ ВО "Чеченский государственный университет А.А.Кадырова"</h5>
+        </div>
+    </footer>
+        
+      
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
